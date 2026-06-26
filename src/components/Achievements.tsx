@@ -74,8 +74,8 @@ export function Achievements() {
     <section id="achievements" className="transition-all duration-300">
       <SectionHeader
         icon={<Award className="w-5 h-5" />}
-        title="Leadership & Achievements"
-        subtitle="Recognition and contributions to the community"
+        title="Certifications & Achievements"
+        subtitle="Credentials and programs across finance and analysis"
       />
 
       <Reveal className="h-[260px] rounded-xl overflow-hidden dark:bg-[#0E0E10] bg-[#FAFAFA] border dark:border-white/10 border-black/10 shadow-lg hover:shadow-xl transition-shadow duration-300">

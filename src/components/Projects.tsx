@@ -19,13 +19,24 @@ function ProjectCard({ project }: { project: Project }) {
   return (
     <div className="group relative flex h-full flex-col overflow-hidden rounded-xl border transition-all duration-300 hover:shadow-xl dark:bg-black dark:border-white/10 dark:hover:border-white/20 bg-white border-black/10 hover:border-black/20 cursor-pointer">
       <div className="relative w-full h-48 sm:h-54 lg:h-58 overflow-hidden bg-black/5 dark:bg-white/5">
-        <Image
-          src={project.image}
-          alt={project.title}
-          fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
-        />
+        {project.image ? (
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+        ) : (
+          <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-black/10 via-black/5 to-transparent dark:from-white/15 dark:via-white/5 dark:to-transparent">
+            <div className="transition-transform duration-500 group-hover:scale-110 dark:text-white/80 text-black/70">
+              <TechIcon
+                name={project.techIcons[0]}
+                className="w-16 h-16 sm:w-20 sm:h-20"
+              />
+            </div>
+          </div>
+        )}
       </div>
 
       <div className="flex flex-col flex-1 p-5 sm:p-6">
@@ -108,7 +119,7 @@ export function Projects() {
       <SectionHeader
         icon={<FolderGit2 className="w-5 h-5" />}
         title="Projects"
-        subtitle="4 projects showcasing my skills"
+        subtitle="Independent research in M&A intelligence and equity valuation"
       />
 
       <PillTabs

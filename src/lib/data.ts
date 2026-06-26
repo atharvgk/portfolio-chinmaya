@@ -1,93 +1,83 @@
 export const profile = {
-  name: "Deepanshu Mani",
-  title: "Full Stack Developer",
-  location: "Uttar Pradesh, India",
+  name: "Chinmaya Umesh",
+  title: "Financial Analyst | M&A Research & Valuation",
+  location: "Bengaluru, India",
   flag: "🇮🇳",
-  available: "Available for hire",
+  available: "Open to Analyst Roles",
   tagline:
-    "I build AI-powered web and mobile products that improve user experience, automate workflows, and ship fast with production-grade backend systems.",
-  email: "xtmani2004@gmail.com",
+    "B.Com (Finance) graduate and CFA Level I candidate building toward a career in investment banking — specializing in M&A intelligence, cross-border financial reporting, and equity valuation.",
+  email: "chinmaya.umesh@example.com",
   resume: "/Resume.pdf",
-  calLink: "xtmani/30min",
   socials: {
-    github: "https://github.com/Deepanshu-mani",
-    linkedin: "https://www.linkedin.com/in/deepanshu-mani",
-    twitter: "https://x.com/manixcodes",
+    linkedin: "https://www.linkedin.com/in/chinmaya-umesh",
   },
 };
 
 export const aboutTags = [
-  "Full Stack Development",
-  "Real-time Applications",
-  "AI Integration",
-  "Cloud Architecture",
+  "M&A Research",
+  "Equity Valuation",
+  "Financial Modelling",
+  "Ind AS & US GAAP",
 ];
 
 export const techCards = [
   {
-    title: "Frontend Development",
-    items:
-      "React.js, Next.js, TypeScript, React Native, JavaScript, HTML5, CSS3, Tailwind CSS, Material UI, Redux, Responsive Design",
+    title: "M&A & Research",
+    skills: [
+      "Deal Tracking & Intelligence",
+      "M&A Database Maintenance",
+      "Deal Alert Preparation",
+      "Industry Overviews",
+      "Benchmarking & Screening",
+      "Pitchbook Components",
+    ],
   },
   {
-    title: "Backend & APIs",
-    items:
-      "Node.js, Express.js, Python, Flask, FastAPI, REST APIs, GraphQL, MongoDB, PostgreSQL, MySQL, Redis, Firebase",
+    title: "Financial Analysis",
+    skills: [
+      "DCF Valuation",
+      "Three-Statement Modelling",
+      "Comparable Company Analysis",
+      "Variance Analysis",
+      "Financial Statement Analysis (Ind AS & US GAAP)",
+    ],
   },
   {
-    title: "AI & Machine Learning",
-    items:
-      "Azure OpenAI, LangChain, Hugging Face, Ollama, CrewAI, LLMs, NLP, Computer Vision, Vector Databases (ChromaDB)",
+    title: "Tools",
+    skills: [
+      "Advanced Excel",
+      "PowerPoint",
+      "Python",
+      "Tally ERP",
+      "Power BI (Basic)",
+      "SQL (Basic)",
+    ],
   },
   {
-    title: "DevOps & Cloud",
-    items:
-      "AWS (EBS, S3, RDS), Docker, GitHub Actions, CI/CD, Git, Vercel, Netlify, Selenium, Testing (Jest, PyTest)",
+    title: "Data & Platforms",
+    skills: [
+      "FactSet / Dealogic Methodology",
+      "BSE/NSE Disclosures",
+      "Reuters",
+      "Grant Thornton Dealtracker",
+      "Public Filings",
+    ],
   },
 ];
 
 export type IconKey =
-  | "mysql"
-  | "postgresql"
-  | "openai"
-  | "gemini"
-  | "git"
-  | "github"
-  | "javascript"
-  | "react"
-  | "nextjs"
-  | "nodejs"
-  | "typescript"
-  | "tailwind"
-  | "express"
-  | "mongodb"
-  | "prisma"
-  | "vercel"
-  | "docker"
-  | "redux"
-  | "claude";
-
-export const marqueeIcons: IconKey[] = [
-  "mysql",
-  "postgresql",
-  "openai",
-  "gemini",
-  "git",
-  "github",
-  "javascript",
-  "react",
-  "nextjs",
-  "nodejs",
-  "typescript",
-  "tailwind",
-  "express",
-  "mongodb",
-  "prisma",
-  "claude",
-  "vercel",
-  "docker",
-  "redux",
-];
+  | "python"
+  | "sql"
+  | "excel"
+  | "powerpoint"
+  | "powerbi"
+  | "tally"
+  | "valuation"
+  | "modeling"
+  | "banking"
+  | "reports"
+  | "analytics"
+  | "rupee";
 
 export type ExperienceItem = {
   role: string;
@@ -100,53 +90,42 @@ export type ExperienceItem = {
 
 export const experience: ExperienceItem[] = [
   {
-    role: "Full Stack Engineer",
-    org: "Alerix",
-    period: "Dec 2025 - Present",
-    mode: "Remote",
-    icon: "code",
-    points: [
-      "Building AI-powered applications using LLM APIs, automation workflows, and real-time systems.",
-      "Designed backend services for AI agents, prompt pipelines, and structured data processing.",
-      "Optimized API orchestration to improve latency and system responsiveness.",
-    ],
-  },
-  {
-    role: "Freelance Full Stack Developer",
-    org: "Independent / Client Work",
-    period: "2025 - Present",
-    mode: "Remote",
+    role: "Finance Intern",
+    org: "SPAN.IO Technology India Pvt. Ltd.",
+    period: "Mar 2026 - Present",
+    mode: "Bengaluru (Onsite)",
     icon: "briefcase",
     points: [
-      "Delivered end-to-end production applications across iOS, Android, and Web.",
-      "Built and deployed full-stack apps using React, Next.js, Expo, Node.js, and PostgreSQL.",
-      "Managed full lifecycle: development, CI/CD, cloud deployment, and app store releases.",
-      "Improved performance by 40% via optimization like lazy loading and code splitting.",
+      "Prepared monthly MIS financial packs — P&L, balance sheet, cash flows, and Budget vs. Actuals variance analysis — supporting senior management financial review.",
+      "Drove year-end financial statement preparation for statutory audit in both Ind AS and US GAAP formats, including INR-to-USD currency translation adjustments.",
+      "Built a Python-automated GST ITC reconciliation workflow from scratch, eliminating manual processing errors and significantly reducing month-end turnaround time.",
+      "Coordinated with external auditors on documentation, financial data validation, and schedule preparation across multiple workstreams under strict deadlines.",
+      "Prepared financial schedules and cross-functional reporting packs, communicating complex financial data clearly to senior finance stakeholders.",
     ],
   },
   {
-    role: "Full Stack Developer",
-    org: "Sai Computer Limited",
-    period: "Sep 2025 - Nov 2025",
-    mode: "Onsite",
+    role: "Summer Intern",
+    org: "A P Kunjithaya & Co., Chartered Accountants",
+    period: "May 2025 - Jul 2025",
+    mode: "Bengaluru",
     icon: "monitor",
     points: [
-      "Built backend APIs and real-time data pipelines using Node.js, Kafka, and WebSockets.",
-      "Developed React dashboards for monitoring system metrics and data flows.",
-      "Contributed across frontend and backend to improve system performance and usability.",
+      "Reconciled client financial accounts and verified supporting documentation for statutory audit compliance.",
+      "Conducted GST filing verification and financial statement checks, ensuring regulatory and reporting accuracy.",
+      "Streamlined Excel-based documentation templates, reducing manual reconciliation effort for recurring audit procedures.",
+      "Supported audit testing procedures including control checks and financial data validation across client accounts.",
     ],
   },
   {
-    role: "Frontend Developer Intern",
-    org: "QVIQ.io",
-    period: "Dec 2024 - Feb 2025",
-    mode: "Remote",
+    role: "Accounts Intern",
+    org: "Coastal Sales & Service",
+    period: "May 2024",
+    mode: "Bengaluru",
     icon: "pen",
     points: [
-      "Built reusable React components with Tailwind CSS to accelerate development cycles.",
-      "Reduced JS bundle size by 35% via code refactoring and dynamic imports.",
-      "Integrated REST APIs and collaborated closely with backend for smooth data flows.",
-      "Enhanced UI performance and fixed bugs, improving user retention by 15%.",
+      "Managed AR/AP cycles, processing 100+ financial transactions weekly in Tally ERP.",
+      "Performed monthly ledger reconciliations between balances and source documents, identifying and resolving discrepancies.",
+      "Prepared monthly financial performance reports with variance commentary to support management decisions on cash flow and operations.",
     ],
   },
 ];
@@ -162,23 +141,31 @@ export type EducationItem = {
 
 export const education: EducationItem[] = [
   {
-    degree: "Bachelor of Technology (B.Tech)",
-    org: "Meerut Institute of Engineering and Technology (MIET)",
-    period: "2021 - 2025",
-    mode: "Meerut, India",
+    degree: "B.Com (Finance)",
+    org: "St. Joseph's College of Commerce (Autonomous), Bengaluru",
+    period: "Graduated Jun 2025",
+    mode: "CGPA: 7.09",
     icon: "grad",
     points: [
-      "Focused on software engineering, data structures, algorithms, and web technologies.",
-      "Active member and mentor at the college coding club.",
+      "Specialized in finance with coursework spanning financial accounting, corporate finance, and taxation.",
+    ],
+  },
+  {
+    degree: "CFA Level I",
+    org: "CFA Institute",
+    period: "Appearing November 2026",
+    mode: "Registered Candidate",
+    icon: "book",
+    points: [
+      "Curriculum: Financial Reporting & Analysis, Equity Investments, Fixed Income, Corporate Finance, and Portfolio Management.",
     ],
   },
 ];
 
 export const projectFilters = [
   "Featured",
-  "AI & Automation",
-  "Full-Stack",
-  "Frontend",
+  "M&A Research",
+  "Valuation",
   "All",
 ] as const;
 
@@ -188,7 +175,7 @@ export type Project = {
   title: string;
   description: string;
   impact: string;
-  image: string;
+  image?: string;
   categories: ProjectFilter[];
   github?: string;
   external?: string;
@@ -199,76 +186,43 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "ZedTrack -- CRM & Task Automation Platform",
+    title: "India M&A Deal Intelligence Tracker",
     description:
-      "Full-stack CRM for operations with automation workflows, WhatsApp/SMS notifications, and real-time updates.",
+      "A structured M&A deal database tracking 10+ major Indian transactions from 2025 — covering acquirer, target, sector, deal value, deal type, stake percentage, cross-border classification, and strategic rationale.",
     impact:
-      "Improved operations workflow speed with real-time task and notification automation.",
-    image: "/zedtrack.png",
-    categories: ["Featured", "AI & Automation", "Full-Stack"],
-    techIcons: ["react", "nextjs", "nodejs", "postgresql", "prisma", "git"],
+      "Surfaced key trends — Japan Inc.'s dual banking bets, PSU-led renewable consolidation, and PLI-driven manufacturing inflows — in a sell-side deal-alert format.",
+    categories: ["Featured", "M&A Research"],
+    techIcons: ["banking", "excel", "reports"],
+    badges: ["Independent Research", "Ongoing"],
   },
   {
-    title: "Ask Rezzy -- AI Assistant",
+    title: "Equity Valuation — Tata Motors Ltd.",
     description:
-      "RAG-based AI assistant with semantic retrieval, prompt pipelines, and streaming responses.",
+      "An integrated three-statement model projecting revenue, margins, and free cash flows, paired with a DCF valuation (WACC estimation + sensitivity analysis) and comparable company analysis.",
     impact:
-      "Delivered contextual responses via RAG pipelines and real-time streaming UX.",
-    image: "/ask-rezzy.webp",
-    categories: ["Featured", "AI & Automation"],
-    github: "https://github.com/Deepanshu-mani/ask-rezzy",
-    external: "https://bit.ly/3KBFINh",
-    techIcons: ["nextjs", "nodejs", "typescript"],
-    badges: ["LLM", "RAG"],
-  },
-  {
-    title: "Real-Time Collaborative Drawing App",
-    description:
-      "Multi-user drawing platform using WebSockets and event-driven architecture.",
-    impact:
-      "Enabled low-latency multi-user drawing with room-based WebSocket synchronization.",
-    image: "/excalidraw.webp",
-    categories: ["Featured", "Full-Stack"],
-    github: "https://github.com/Deepanshu-mani/excalidraw",
-    external: "https://bit.ly/46MhIi3",
-    techIcons: ["nextjs", "nodejs", "typescript", "postgresql", "prisma", "git"],
-  },
-  {
-    title: "Brainly",
-    description:
-      "Smart bookmark dashboard to categorize YouTube and Twitter content with secure auth and AI summaries.",
-    impact:
-      "Improved content discoverability using AI summaries and structured bookmark categorization.",
-    image: "/brainly.webp",
-    categories: ["Featured", "Full-Stack", "Frontend"],
-    github: "https://github.com/Deepanshu-mani/Brainly",
-    external: "https://brainly-9lwi.vercel.app/",
-    techIcons: ["react", "typescript", "tailwind", "nodejs", "express", "mongodb"],
-    badges: ["Jina AI"],
-    extraBadge: 1,
+      "Benchmarked Tata Motors against peers using P/E and EV/EBITDA multiples, structured to sell-side equity research standards.",
+    categories: ["Featured", "Valuation"],
+    techIcons: ["valuation", "modeling", "excel"],
+    badges: ["Independent Research", "Ongoing"],
   },
 ];
 
 export const achievements = [
   {
-    label: "🏆 Winner: Trikon 1.0 Hackathon (MIET, 2024)",
-    detail:
-      "Led a team to victory in the college hackathon, demonstrating technical excellence and innovation",
+    label: "📈 CFA Level I Candidate",
+    detail: "Appearing November 2026 — CFA Institute, Registered Candidate",
   },
   {
-    label: "🥈 Runner-Up: AWS Generative AI Ideathon (MIET, 2024)",
-    detail:
-      "Secured second place in AWS-sponsored AI competition, showcasing expertise in generative AI technologies",
+    label: "🏦 Investment Banking Experience Program",
+    detail: "Completed virtual experience program covering M&A advisory workflows",
   },
   {
-    label: "📜 MERN Stack Development Certificate (Pregrad, 2024)",
-    detail:
-      "Completed comprehensive certification demonstrating proficiency in MongoDB, Express.js, React, and Node.js",
+    label: "💼 Wealth Management Experience Program",
+    detail: "Completed virtual experience program covering wealth advisory fundamentals",
   },
   {
-    label: "👥 Coding Club Mentor",
-    detail:
-      "Actively contributed to the college's coding club, mentoring juniors in web development and project-based learning",
+    label: "📊 Microsoft Office Specialist (Excel)",
+    detail: "Certified in advanced Excel for financial modelling and analysis",
   },
 ];
 

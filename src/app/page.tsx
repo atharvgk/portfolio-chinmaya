@@ -6,60 +6,51 @@ import { Experience } from "@/components/Experience";
 import { Projects } from "@/components/Projects";
 import { Achievements } from "@/components/Achievements";
 import { ChatWidget } from "@/components/ChatWidget";
+import { profile } from "@/lib/data";
 
 export default function Home() {
   return (
     <div className="min-h-screen transition-colors duration-500 dark:bg-[#0E0E10] bg-[#FAFAFA] dark:text-gray-100 text-gray-900">
-      {/* Hidden SEO content (mirrors the live site's screen-reader landmark) */}
+      {/* Hidden SEO content (screen-reader landmark) */}
       <main className="sr-only">
         <nav aria-label="Primary">
-          <a href="/">Home</a>
-          <a href="/projects">Projects</a>
-          <a href="/blog">Blog</a>
-          <a href="/about">About</a>
-          <a href="/work">Work</a>
-          <a href="/resume">Resume</a>
-          <a href="/contact">Contact</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#achievements">Achievements</a>
         </nav>
         <h2>
-          Deepanshu Mani — Full Stack Developer Building AI-Powered Web
-          Applications
+          Chinmaya Umesh — Financial Analyst specializing in M&amp;A Research and
+          Valuation
         </h2>
         <h2>
-          Specializing in Next.js, Node.js, TypeScript, PostgreSQL, and AI
-          Automation
+          Specializing in M&amp;A Intelligence, Cross-Border Financial Reporting,
+          and Equity Valuation
         </h2>
         <p>
-          I design and ship production-ready applications focused on
-          performance, reliability, and measurable business outcomes.
+          B.Com (Finance) graduate and CFA Level I candidate building toward a
+          career in investment banking, with hands-on experience in financial
+          reporting across Ind AS and US GAAP.
         </p>
-        <h2>Featured Projects</h2>
-        <p>
-          End-to-end full stack builds with architecture decisions, performance
-          improvements, and implementation lessons from real client and product
-          work.
-        </p>
-        <a href="/projects">Explore featured projects and case studies</a>
-        <h2>Technical Blog</h2>
-        <p>
-          Deep dives on Next.js SEO, backend scalability, API optimization, AI
-          integration, and production engineering tradeoffs.
-        </p>
-        <a href="/blog">Read technical blog articles</a>
         <h2>Work Experience</h2>
         <p>
-          Full Stack Developer delivering web and mobile products with Node.js
-          services, PostgreSQL data modeling, and cloud deployment workflows.
+          Finance Intern preparing MIS financial packs, year-end statements for
+          statutory audit, and Python-automated GST reconciliation workflows.
         </p>
-        <a href="/work">View full work experience timeline</a>
-        <h2>Tech Stack</h2>
+        <h2>Projects</h2>
         <p>
-          Next.js, React, TypeScript, Node.js, PostgreSQL, Prisma, WebSockets,
-          and AI tooling for modern product development.
+          India M&amp;A Deal Intelligence Tracker and an integrated equity
+          valuation of Tata Motors using DCF and comparable company analysis.
         </p>
-        <a href="/about">Learn more about my engineering background</a>
-        <a href="/resume">Open detailed resume</a>
-        <a href="/contact">Get in touch for projects</a>
+        <h2>Skills</h2>
+        <p>
+          Deal tracking and intelligence, DCF valuation, three-statement
+          modelling, comparable company analysis, Advanced Excel, PowerPoint,
+          Python, Tally ERP, Power BI, and SQL.
+        </p>
+        <a href="#projects">Explore research projects</a>
+        <a href={profile.resume}>Open detailed resume</a>
       </main>
 
       <SectionNav />
@@ -78,7 +69,7 @@ export default function Home() {
 
               <footer className="pt-8 border-t dark:border-white/10 border-black/10 text-center lg:text-left">
                 <p className="text-sm dark:text-gray-400 text-gray-500">
-                  © 2026 Deepanshu Mani
+                  © 2026 Chinmaya Umesh
                 </p>
               </footer>
             </div>

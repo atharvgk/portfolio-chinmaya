@@ -14,14 +14,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Deepanshu Mani | Full Stack Developer",
+  title: "Chinmaya Umesh | Financial Analyst",
   description:
-    "Deepanshu Mani — Full Stack Developer building AI-powered web applications. Specializing in Next.js, Node.js, TypeScript, PostgreSQL, and AI Automation.",
-  metadataBase: new URL("https://xtmani.com"),
+    "Chinmaya Umesh — Financial Analyst and CFA Level I candidate specializing in M&A intelligence, cross-border financial reporting (Ind AS & US GAAP), and equity valuation.",
   openGraph: {
-    title: "Deepanshu Mani | Full Stack Developer",
+    title: "Chinmaya Umesh | Financial Analyst",
     description:
-      "Full Stack Developer building AI-powered web and mobile products.",
+      "Financial Analyst specializing in M&A research, financial reporting, and equity valuation.",
     images: ["/og-image.webp"],
     type: "website",
   },

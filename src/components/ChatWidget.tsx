@@ -22,7 +22,7 @@ export function ChatWidget() {
             <div className="flex items-center gap-3 p-4 border-b dark:border-white/10 border-black/10">
               <div className="relative">
                 <div className="w-9 h-9 rounded-full dark:bg-white bg-black dark:text-black text-white flex items-center justify-center font-bold">
-                  DM
+                  CU
                 </div>
                 <span className="absolute bottom-0 right-0 h-2.5 w-2.5 rounded-full bg-green-500 border-2 dark:border-[#0E0E10] border-white" />
               </div>
@@ -37,8 +37,8 @@ export function ChatWidget() {
             </div>
             <div className="p-4 space-y-3 text-sm">
               <div className="rounded-2xl rounded-tl-sm px-3 py-2 dark:bg-white/10 bg-black/5 dark:text-white/90 text-black/80 w-fit max-w-[85%]">
-                Hi there! 👋 Thanks for stopping by. How can I help you build
-                your next product?
+                Hi there! 👋 Thanks for stopping by. Feel free to reach out about
+                analyst roles, M&amp;A research, or valuation work.
               </div>
             </div>
             <div className="p-3 border-t dark:border-white/10 border-black/10">
