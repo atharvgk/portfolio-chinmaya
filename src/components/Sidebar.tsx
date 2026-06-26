@@ -1,8 +1,8 @@
  "use client";
 
 import { motion } from "framer-motion";
-import { Calendar, ExternalLink, FileText, Mail, MapPin } from "lucide-react";
-import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
+import { ExternalLink, FileText, Mail, MapPin } from "lucide-react";
+import { FiLinkedin } from "react-icons/fi";
 import { profile } from "@/lib/data";
 import { StarBorder } from "./StarBorder";
 import { ThemeToggle } from "./ThemeToggle";
@@ -107,15 +107,6 @@ export function Sidebar() {
             </SocialLink>
 
             <SocialLink
-              href={profile.socials.github}
-              ariaLabel="GitHub"
-              preview="/socials/github.webp"
-              previewAlt="GitHub preview"
-            >
-              <FiGithub className="w-4 h-4" />
-            </SocialLink>
-
-            <SocialLink
               href={`mailto:${profile.email}`}
               ariaLabel="Email"
               previewText={profile.email}
@@ -131,21 +122,12 @@ export function Sidebar() {
             >
               <FiLinkedin className="w-4 h-4" />
             </SocialLink>
-
-            <SocialLink
-              href={profile.socials.twitter}
-              ariaLabel="Twitter"
-              preview="/socials/twitter.webp"
-              previewAlt="Twitter preview"
-            >
-              <FiTwitter className="w-4 h-4" />
-            </SocialLink>
           </div>
 
           {/* CTA */}
           <div className="space-y-4 pt-2">
             <h2 className="text-xl sm:text-2xl font-bold dark:text-white text-gray-900 text-center lg:text-left tracking-wide">
-              Let&apos;s Build Your Next Product
+              Let&apos;s Connect
             </h2>
             <div className="flex flex-col sm:flex-row gap-3">
               <a href={`mailto:${profile.email}`} className="w-full sm:w-auto">
@@ -161,20 +143,20 @@ export function Sidebar() {
               </a>
 
               <a
-                href={`https://cal.com/${profile.calLink}`}
+                href={profile.socials.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto"
               >
                 <button className="group flex flex-col items-center justify-center gap-1 px-6 py-3 rounded-full border-2 dark:border-white/20 border-black/20 dark:text-white text-black dark:hover:bg-white/10 hover:bg-black/5 transition-all duration-200 hover:scale-105 min-h-[68px] w-full sm:w-auto">
                   <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4 group-hover:scale-110 transition-transform" />
+                    <FiLinkedin className="w-4 h-4 group-hover:scale-110 transition-transform" />
                     <span className="font-semibold text-sm sm:text-base">
-                      Schedule a Free Call
+                      Connect on LinkedIn
                     </span>
                   </div>
                   <span className="text-xs dark:text-white/60 text-black/60">
-                    30-minute strategy session
+                    Open to analyst opportunities
                   </span>
                 </button>
               </a>

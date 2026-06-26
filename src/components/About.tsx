@@ -27,28 +27,39 @@ export function About() {
 
       <div className="space-y-5 lg:space-y-6 dark:text-gray-300 text-gray-700 leading-relaxed transition-colors duration-300 text-sm sm:text-base lg:text-base xl:text-lg">
         <p>
-          Hi, I&apos;m a 22-year-old{" "}
+          I&apos;m a B.Com (Finance) graduate and{" "}
           <span className="font-semibold dark:text-white text-black">
-            Full Stack Developer
+            CFA Level I candidate
           </span>{" "}
-          who builds complete products from the ground up. I work across the
-          stack — from building responsive UIs with React, Next.js, Tailwind
-          CSS, and React Native, to writing backend APIs with Node.js and
-          Express, to managing databases like MongoDB, PostgreSQL, and MySQL.
+          based in Bengaluru, building toward a career in investment banking —
+          specifically M&amp;A advisory.
         </p>
         <p>
-          I enjoy creating{" "}
+          I currently work at{" "}
           <span className="font-semibold dark:text-white text-black">
-            end-to-end solutions
-          </span>{" "}
-          that feel smooth and practical. Whether it&apos;s adding real-time
-          features with WebSocket and Socket.io, integrating AI with OpenAI and
-          Gemini, or scaling apps with Prisma and cloud tools, I like working
-          across both frontend and backend to make things work well.
+            SPAN.IO Technology India Pvt. Ltd.
+          </span>
+          , a US-based R&amp;D firm, where I prepare financial statements across
+          Ind AS and US GAAP, manage cross-currency reporting from INR to USD,
+          and built a Python-automated GST reconciliation workflow from scratch.
+          It&apos;s hands-on, deadline-driven work that has sharpened both my
+          technical accuracy and my ability to communicate financial data
+          clearly to senior stakeholders.
         </p>
         <p>
-          When I&apos;m not coding, I&apos;m usually watching movies — I just
-          enjoy a good story and the little details that make it fun to watch.
+          Outside the internship, I independently track India&apos;s{" "}
+          <span className="font-semibold dark:text-white text-black">
+            M&amp;A landscape
+          </span>{" "}
+          — maintaining a structured deal database, writing strategic deal
+          rationale, and analysing transaction trends across sectors. It&apos;s
+          my way of thinking like a banker before I become one.
+        </p>
+        <p>
+          I&apos;m drawn to M&amp;A because the work sits at the intersection of
+          strategy and valuation — understanding why a deal gets done, whether
+          the price makes sense, and what it signals about a sector is the kind
+          of problem I want to spend my career solving.
         </p>
       </div>
     </section>
