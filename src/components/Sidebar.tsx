@@ -55,7 +55,7 @@ export function Sidebar() {
             transition={{ duration: 0.5 }}
             className="flex justify-center lg:justify-start"
           >
-            <TiltedCard src="/profile.webp" alt={profile.name} caption={profile.name} />
+            <TiltedCard src="/profile.webp.jpeg" alt={profile.name} caption={profile.name} />
           </motion.div>
 
           {/* Name + title */}
@@ -97,7 +97,7 @@ export function Sidebar() {
             <SocialLink
               href={profile.resume}
               ariaLabel="Resume"
-              preview="/socials/resume.webp"
+              preview="/socials/resume.png"
               previewAlt="Resume preview"
               variant="outline"
             >
@@ -117,7 +117,7 @@ export function Sidebar() {
             <SocialLink
               href={profile.socials.linkedin}
               ariaLabel="LinkedIn"
-              preview="/socials/linkedin.webp"
+              preview="/socials/linkedin.png"
               previewAlt="LinkedIn preview"
             >
               <FiLinkedin className="w-4 h-4" />
