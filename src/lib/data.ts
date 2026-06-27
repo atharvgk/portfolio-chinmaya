@@ -6,7 +6,7 @@ export const profile = {
   available: "Available for work",
   tagline:
     "B.Com (Finance) graduate and CFA Level I candidate building toward a career in investment banking — specializing in M&A intelligence, cross-border financial reporting, and equity valuation.",
-  email: "chinmaya.umesh@gmail.com",
+  email: "chinmayaumeshblr@gmail.com",
   resume: "/Resume.pdf",
   socials: {
     linkedin: "https://www.linkedin.com/in/chinmaya-umesh",
