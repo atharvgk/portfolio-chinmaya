@@ -32,7 +32,7 @@ export function Sidebar() {
         }}
       />
 
-      <div className="h-full overflow-hidden p-4 sm:p-6 lg:p-8 xl:p-10">
+      <div className="h-full lg:overflow-y-auto no-scrollbar p-4 sm:p-6 lg:p-8 xl:p-10">
         <div className="flex flex-col space-y-7 lg:space-y-8 max-w-md mx-auto lg:max-w-none relative z-10">
           {/* Top row: badge + theme toggle */}
           <div className="flex justify-between items-center gap-4">

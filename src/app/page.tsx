@@ -5,7 +5,7 @@ import { TechStack } from "@/components/TechStack";
 import { Experience } from "@/components/Experience";
 import { Projects } from "@/components/Projects";
 import { Achievements } from "@/components/Achievements";
-import { ChatWidget } from "@/components/ChatWidget";
+import { Contact } from "@/components/Contact";
 import { profile } from "@/lib/data";
 
 export default function Home() {
@@ -19,6 +19,7 @@ export default function Home() {
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
           <a href="#achievements">Achievements</a>
+          <a href="#contact">Contact</a>
         </nav>
         <h2>
           Chinmaya Umesh — Financial Analyst specializing in M&amp;A Research and
@@ -66,6 +67,7 @@ export default function Home() {
               <Experience />
               <Projects />
               <Achievements />
+              <Contact />
 
               <footer className="pt-8 border-t dark:border-white/10 border-black/10 text-center lg:text-left">
                 <p className="text-sm dark:text-gray-400 text-gray-500">
@@ -77,7 +79,6 @@ export default function Home() {
         </div>
       </div>
 
-      <ChatWidget />
     </div>
   );
 }

@@ -232,4 +232,5 @@ export const sectionNav = [
   { id: "experience", label: "Experience" },
   { id: "projects", label: "Projects" },
   { id: "achievements", label: "Achievements" },
+  { id: "contact", label: "Contact" },
 ];
