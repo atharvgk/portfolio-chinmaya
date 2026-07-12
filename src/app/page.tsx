@@ -6,9 +6,10 @@ import { Experience } from "@/components/Experience";
 import { Projects } from "@/components/Projects";
 import { Achievements } from "@/components/Achievements";
 import { Contact } from "@/components/Contact";
-import { profile } from "@/lib/data";
+import { getPortfolioContent } from "@/lib/db";
 
-export default function Home() {
+export default async function Home() {
+  const content = await getPortfolioContent();
   return (
     <div className="min-h-screen transition-colors duration-500 dark:bg-[#0E0E10] bg-[#FAFAFA] dark:text-gray-100 text-gray-900">
       {/* Hidden SEO content (screen-reader landmark) */}
@@ -51,22 +52,22 @@ export default function Home() {
           Python, Tally ERP, Power BI, and SQL.
         </p>
         <a href="#projects">Explore research projects</a>
-        <a href={profile.resume}>Open detailed resume</a>
+        <a href={content.profile.resume}>Open detailed resume</a>
       </main>
 
       <SectionNav />
 
       <div className="max-w-[2000px] mx-auto">
         <div className="flex flex-col lg:flex-row w-full">
-          <Sidebar />
+          <Sidebar profile={content.profile} />
 
           <div className="flex-1 p-4 sm:p-6 lg:p-8 xl:p-10 lg:h-screen lg:overflow-y-auto no-scrollbar">
             <div className="max-w-4xl mx-auto lg:mx-0 space-y-16 lg:space-y-20">
-              <About />
-              <TechStack />
-              <Experience />
-              <Projects />
-              <Achievements />
+              <About profile={content.profile} aboutTags={content.aboutTags} />
+              <TechStack techCards={content.techCards} />
+              <Experience experience={content.experience} education={content.education} />
+              <Projects projects={content.projects} />
+              <Achievements achievements={content.achievements} />
               <Contact />
 
               <footer className="pt-8 border-t dark:border-white/10 border-black/10 text-center lg:text-left">

@@ -2,10 +2,10 @@
 
 import { motion } from "framer-motion";
 import { BarChart3 } from "lucide-react";
-import { techCards } from "@/lib/data";
+import { TechCardItem } from "@/lib/types";
 import { SectionHeader } from "./SectionHeader";
 
-export function TechStack() {
+export function TechStack({ techCards }: { techCards: TechCardItem[] }) {
   return (
     <section id="skills" className="transition-all duration-300">
       <SectionHeader

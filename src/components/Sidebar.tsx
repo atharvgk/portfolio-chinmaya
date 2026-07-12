@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { ExternalLink, FileText, Mail, MapPin } from "lucide-react";
 import { FiLinkedin } from "react-icons/fi";
-import { profile } from "@/lib/data";
+import { Profile } from "@/lib/types";
 import { StarBorder } from "./StarBorder";
 import { ThemeToggle } from "./ThemeToggle";
 import { SocialLink } from "./SocialLink";
@@ -14,7 +14,7 @@ const fadeUp = {
   show: { opacity: 1, y: 0 },
 };
 
-export function Sidebar() {
+export function Sidebar({ profile }: { profile: Profile }) {
   return (
     <div className="w-full lg:w-2/5 xl:w-[38%] 2xl:w-[35%] lg:sticky lg:top-0 lg:h-screen transition-colors duration-500 dark:bg-[#0E0E10] bg-[#FAFAFA] border-b lg:border-b-0 lg:border-r dark:border-white/10 border-black/10 relative z-20">
       {/* Grid background */}

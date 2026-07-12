@@ -5,12 +5,8 @@ import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { ExternalLink, FolderGit2 } from "lucide-react";
 import { FiGithub } from "react-icons/fi";
-import {
-  projectFilters,
-  projects,
-  type Project,
-  type ProjectFilter,
-} from "@/lib/data";
+import { projectFilters, type ProjectFilter } from "@/lib/data";
+import { Project } from "@/lib/types";
 import { SectionHeader } from "./SectionHeader";
 import { PillTabs } from "./PillTabs";
 import { TechIcon } from "./TechIcon";
@@ -107,7 +103,7 @@ function ProjectCard({ project }: { project: Project }) {
   );
 }
 
-export function Projects() {
+export function Projects({ projects }: { projects: Project[] }) {
   const [filter, setFilter] = useState<ProjectFilter>("Featured");
 
   const visible = projects.filter((p) =>

@@ -2,10 +2,10 @@
 
 import { motion } from "framer-motion";
 import { User } from "lucide-react";
-import { aboutTags } from "@/lib/data";
+import { Profile } from "@/lib/types";
 import { SectionHeader } from "./SectionHeader";
 
-export function About() {
+export function About({ profile, aboutTags }: { profile: Profile; aboutTags: string[] }) {
   return (
     <section id="about" className="transition-all duration-300">
       <SectionHeader icon={<User className="w-5 h-5" />} title="About Me" />
@@ -26,41 +26,49 @@ export function About() {
       </div>
 
       <div className="space-y-5 lg:space-y-6 dark:text-gray-300 text-gray-700 leading-relaxed transition-colors duration-300 text-sm sm:text-base lg:text-base xl:text-lg">
-        <p>
-          I&apos;m a B.Com (Finance) graduate and{" "}
-          <span className="font-semibold dark:text-white text-black">
-            CFA Level I candidate
-          </span>{" "}
-          based in Bengaluru, building toward a career in investment banking —
-          specifically M&amp;A advisory.
-        </p>
-        <p>
-          I currently work at{" "}
-          <span className="font-semibold dark:text-white text-black">
-            SPAN.IO Technology India Pvt. Ltd.
-          </span>
-          , a US-based R&amp;D firm, where I prepare financial statements across
-          Ind AS and US GAAP, manage cross-currency reporting from INR to USD,
-          and built a Python-automated GST reconciliation workflow from scratch.
-          It&apos;s hands-on, deadline-driven work that has sharpened both my
-          technical accuracy and my ability to communicate financial data
-          clearly to senior stakeholders.
-        </p>
-        <p>
-          Outside the internship, I independently track India&apos;s{" "}
-          <span className="font-semibold dark:text-white text-black">
-            M&amp;A landscape
-          </span>{" "}
-          — maintaining a structured deal database, writing strategic deal
-          rationale, and analysing transaction trends across sectors. It&apos;s
-          my way of thinking like a banker before I become one.
-        </p>
-        <p>
-          I&apos;m drawn to M&amp;A because the work sits at the intersection of
-          strategy and valuation — understanding why a deal gets done, whether
-          the price makes sense, and what it signals about a sector is the kind
-          of problem I want to spend my career solving.
-        </p>
+        {profile.aboutParagraphs && profile.aboutParagraphs.length > 0 ? (
+          profile.aboutParagraphs.map((para, i) => (
+            <p key={i}>{para}</p>
+          ))
+        ) : (
+          <>
+            <p>
+              I&apos;m a B.Com (Finance) graduate and{" "}
+              <span className="font-semibold dark:text-white text-black">
+                CFA Level I candidate
+              </span>{" "}
+              based in Bengaluru, building toward a career in investment banking —
+              specifically M&amp;A advisory.
+            </p>
+            <p>
+              I currently work at{" "}
+              <span className="font-semibold dark:text-white text-black">
+                SPAN.IO Technology India Pvt. Ltd.
+              </span>
+              , a US-based R&amp;D firm, where I prepare financial statements across
+              Ind AS and US GAAP, manage cross-currency reporting from INR to USD,
+              and built a Python-automated GST reconciliation workflow from scratch.
+              It&apos;s hands-on, deadline-driven work that has sharpened both my
+              technical accuracy and my ability to communicate financial data
+              clearly to senior stakeholders.
+            </p>
+            <p>
+              Outside the internship, I independently track India&apos;s{" "}
+              <span className="font-semibold dark:text-white text-black">
+                M&amp;A landscape
+              </span>{" "}
+              — maintaining a structured deal database, writing strategic deal
+              rationale, and analysing transaction trends across sectors. It&apos;s
+              my way of thinking like a banker before I become one.
+            </p>
+            <p>
+              I&apos;m drawn to M&amp;A because the work sits at the intersection of
+              strategy and valuation — understanding why a deal gets done, whether
+              the price makes sense, and what it signals about a sector is the kind
+              of problem I want to spend my career solving.
+            </p>
+          </>
+        )}
       </div>
     </section>
   );

@@ -2,7 +2,7 @@
 
 import { useRef, type MouseEvent } from "react";
 import { Award } from "lucide-react";
-import { achievements } from "@/lib/data";
+import { AchievementItem } from "@/lib/types";
 import { SectionHeader } from "./SectionHeader";
 import { Reveal } from "./Reveal";
 
@@ -69,7 +69,7 @@ function AchievementRow({ label, detail }: { label: string; detail: string }) {
   );
 }
 
-export function Achievements() {
+export function Achievements({ achievements }: { achievements: AchievementItem[] }) {
   return (
     <section id="achievements" className="transition-all duration-300">
       <SectionHeader

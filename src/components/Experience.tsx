@@ -10,12 +10,7 @@ import {
   Monitor,
   PenTool,
 } from "lucide-react";
-import {
-  education,
-  experience,
-  type EducationItem,
-  type ExperienceItem,
-} from "@/lib/data";
+import { EducationItem, ExperienceItem } from "@/lib/types";
 import { SectionHeader } from "./SectionHeader";
 import { PillTabs } from "./PillTabs";
 
@@ -75,7 +70,13 @@ function TimelineItem({
   );
 }
 
-export function Experience() {
+export function Experience({
+  experience,
+  education,
+}: {
+  experience: ExperienceItem[];
+  education: EducationItem[];
+}) {
   const [tab, setTab] = useState<"Work" | "Education">("Work");
 
   return (
