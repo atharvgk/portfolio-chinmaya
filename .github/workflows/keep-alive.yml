@@ -8,9 +8,27 @@ on:
 jobs:
   keep-alive:
     runs-on: ubuntu-latest
+    
+    # Resolve keys dynamically whether they are prefixed with NEXT_PUBLIC_ or not
+    env:
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL || secrets.NEXT_PUBLIC_SUPABASE_URL }}
+      SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+
     steps:
+      - name: Verify Secrets
+        run: |
+          if [ -z "$SUPABASE_URL" ]; then
+            echo "::error::SUPABASE_URL (or NEXT_PUBLIC_SUPABASE_URL) secret is empty or not set in GitHub repository settings!"
+            exit 1
+          fi
+          if [ -z "$SUPABASE_ANON_KEY" ]; then
+            echo "::error::SUPABASE_ANON_KEY (or NEXT_PUBLIC_SUPABASE_ANON_KEY) secret is empty or not set in GitHub repository settings!"
+            exit 1
+          fi
+          echo "Secrets are present. Length of URL: ${#SUPABASE_URL}, Length of Key: ${#SUPABASE_ANON_KEY}"
+
       - name: Query Supabase DB
         run: |
-          curl -f -X GET "${{ secrets.SUPABASE_URL }}/rest/v1/portfolio?select=id&limit=1" \
-          -H "apikey: ${{ secrets.SUPABASE_ANON_KEY }}" \
-          -H "Authorization: Bearer ${{ secrets.SUPABASE_ANON_KEY }}"
+          curl -f -X GET "$SUPABASE_URL/rest/v1/portfolio?select=id&limit=1" \
+          -H "apikey: $SUPABASE_ANON_KEY" \
+          -H "Authorization: Bearer $SUPABASE_ANON_KEY"
