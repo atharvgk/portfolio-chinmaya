@@ -1,6 +1,7 @@
 "use server";
 
 import { cookies } from "next/headers";
+import { revalidatePath } from "next/cache";
 import { updatePortfolioContent } from "@/lib/db";
 import { PortfolioContent } from "@/lib/types";
 
@@ -44,5 +45,8 @@ export async function saveContent(newContent: PortfolioContent) {
   }
 
   const success = await updatePortfolioContent(newContent);
+  if (success) {
+    revalidatePath("/");
+  }
   return { success };
 }
