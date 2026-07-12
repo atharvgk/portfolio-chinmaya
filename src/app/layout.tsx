@@ -21,7 +21,6 @@ export const metadata: Metadata = {
     title: "Chinmaya Umesh | Financial Analyst",
     description:
       "Financial Analyst specializing in M&A research, financial reporting, and equity valuation.",
-    images: ["/og-image.webp"],
     type: "website",
   },
 };
