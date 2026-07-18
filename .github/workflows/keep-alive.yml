@@ -2,7 +2,7 @@ name: Keep Supabase Alive
 
 on:
   schedule:
-    - cron: '0 0 */3 * *' # Runs every 3 days at 00:00 UTC
+    - cron: '0 0 * * *' # Runs daily at 00:00 UTC to ensure reliable database activity
   workflow_dispatch: # Allows manual trigger from the Actions tab on GitHub
 
 jobs:
@@ -31,4 +31,5 @@ jobs:
         run: |
           curl -f -X GET "$SUPABASE_URL/rest/v1/portfolio?select=id&limit=1" \
           -H "apikey: $SUPABASE_ANON_KEY" \
-          -H "Authorization: Bearer $SUPABASE_ANON_KEY"
+          -H "Authorization: Bearer $SUPABASE_ANON_KEY" \
+          -H "Cache-Control: no-cache, no-store, must-revalidate"
